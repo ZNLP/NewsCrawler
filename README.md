@@ -69,8 +69,8 @@ select * from xinhua;
 drop table if exists xinhua_log;
 CREATE table xinhua_log(
     Area char(200),
-	Url char(200),	#网址
-	Error varchar(500) #错误信息
+	Url char(200),	
+	Error varchar(500) 
 )ENGINE=InnoDB default charset=utf8;
 SELECT * from xinhua_log;
 ```
