@@ -1,12 +1,12 @@
 # NewsCrawler
-新闻爬虫，爬取新华网即时新闻。
+Multilingual crawler for http://www.xinhuanet.com.
 
-### 新华网财经新闻的API为
+### News API of xinhuanet
 ```python
 xinhuanet_template_url = "http://qc.wa.news.cn/nodeart/list?nid=11147664&pgnum={}&cnt={}&tp=1&orderby=1"
 ```
 
-## 新华网各类新闻API
+## Example NodeID
 
             var recommendArr = [ 
                 {
@@ -22,11 +22,11 @@ xinhuanet_template_url = "http://qc.wa.news.cn/nodeart/list?nid=11147664&pgnum={
                     "nid": ["115062", "11147664", "1111750"]
                 },
                 {
-                    "name": "国际",
+                    "name": "International",
                     "nid": "11145724"
                 },
                 {
-                    "name": "网评",
+                    "name": "Review",
                     "nid": "11145723"
                 },
                 {
@@ -34,11 +34,11 @@ xinhuanet_template_url = "http://qc.wa.news.cn/nodeart/list?nid=11147664&pgnum={
                     "nid": "11145722"
                 },
                 {
-                    "name": "社会",
+                    "name": "Society",
                     "nid": "113321"
                 },
                 {
-                    "name": "法治",
+                    "name": "Law",
                     "nid": "113207"
                 },
                 {
@@ -50,7 +50,7 @@ xinhuanet_template_url = "http://qc.wa.news.cn/nodeart/list?nid=11147664&pgnum={
                     "nid": "116716"
                 }
             ];
-## 创建数据库
+## Create the database for this crawler
 
 ```mysql
 create database news;
